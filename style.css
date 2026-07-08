@@ -1,6 +1,10 @@
 header {
     background-color: red;
 }
+.logo-box {
+    border: 1px solid blue;
+    text-align: center;
+}
 main {
     background-color: orange;
 }
