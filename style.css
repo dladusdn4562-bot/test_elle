@@ -2,11 +2,20 @@ header {
     background-color: red;
 }
 .header-wrap {
-    padding-left: 320px; padding-right: 320px;
+    display: flex;
+    flex-direction: column;
     padding-top: 40px; padding-bottom: 17px;
+    gap: 33px;
+    max-width:1200px ;
+    width: 100%;
+    margin: 0 auto;
 }
-.div.cont-inner1 {
+.cont-inner1 {
+    max-width: 1280px;
     padding-left: 40px; padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo-box {
     border: 1px solid blue;
@@ -19,20 +28,29 @@ header {
 }
 .cont-inner2 {
     border: 1px solid white;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 40px; padding-right:40px ;
+    margin: auto;
+    padding-left: 40px; padding-right: 40px;
 }
 .btn-menu-margin {
+    flex: 1;
+}
+.btn-menu {
     padding-right: 18px;
 }
 .D-logo>ul {
     display: flex;
     gap: 24px;
 }
+.header-util-margin {
+    flex: 1;
+}
 .header-util {
-    display: flex;
+    display: flex; 
+        justify-content: flex-end;
     align-items: center;
 }
 .aside {
