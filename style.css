@@ -1,50 +1,51 @@
-header {
-    background-color: red;
+body {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .header-wrap {
     display: flex;
     flex-direction: column;
     padding-top: 40px; padding-bottom: 17px;
     gap: 33px;
-    max-width:1200px ;
-    width: 100%;
     margin: 0 auto;
 }
 .cont-inner1 {
-    max-width: 1280px;
     padding-left: 40px; padding-right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .logo-box {
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 0;
     line-height: 0;
-    padding-left: 20px; padding-right: 20px;
 }
 .cont-inner2 {
     border: 1px solid white;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    padding-left: 40px; padding-right: 40px;
-}
-.btn-menu-margin {
-    flex: 1;
+    position: relative;
 }
 .btn-menu {
     padding-right: 18px;
+    display: flex;
+    justify-content: center;
 }
 .D-logo>ul {
     display: flex;
     gap: 24px;
-    padding-top: 7px; padding-bottom: 7px;
+}
+.menu-text1-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    position: absolute;
+    left: 50%; top: 20%;
+    transform: translateX(-50%);
 }
 .header-util-margin {
     flex: 1;
@@ -60,8 +61,30 @@ header {
 .btn-search-margin {
     padding-left: 20px;
 }
-main {
-    background-color: orange;
+.main-img-box1 {
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+.main-img-box1  img {
+    width: 1280px;
+}
+.txtbox {
+    position: absolute;
+    left: 50%; top: 75%;
+    transform: translateX(-50%);
+    gap: 8px;
+}
+.p-tit , .p-txt {
+    color: #fff;
+    text-align: center;
+}
+.p-tit {
+    font-size: 36px;
+    font-weight: 700;
+}
+.p-txt {
+    font-size: 16px;
 }
 footer {
     background-color: green;
