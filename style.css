@@ -65,6 +65,8 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    flex-direction: column;
+    gap: var(--item-spacing-100, 100px);
 }
 .main-img-box1 {
     overflow: hidden;
@@ -106,6 +108,17 @@
     position: absolute;
     right: 48px;
 }
+.pc-mo {
+    padding: 0 40px 80px 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+.tit-area {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--stroke-weight-1, 1px) solid var(--color-grey-7, #111);
+    gap: 40px;
+}
 footer {
-    background-color: green;
+    border: 1px solid red;
 }
