@@ -98,16 +98,23 @@
 .slide-box {
     display: flex;
     position: absolute;
-    top: 48%;
+    top: 45%;
 }
 .before-slide {
     position: absolute;
-    left: 48px;
+    left: 40px;
+}
+.before-slide img {
+    width: 100px; height: 90px;
 }
 .after-slide {
     position: absolute;
-    right: 48px;
+    right: 40px;
 }
+.after-slide img {
+    width: 100px; height: 90px;
+}
+
 .pc-mo {
     padding: 0 40px 80px 40px;
     max-width: 1200px;
