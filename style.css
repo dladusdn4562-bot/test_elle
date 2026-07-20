@@ -110,8 +110,8 @@
 }
 .pc-mo {
     padding: 0 40px 80px 40px;
-    max-width: 1200px;
-    width: 100%;
+    /* max-width: 1200px; */
+    /* width: 100%; */
 }
 .tit-area {
     display: flex;
