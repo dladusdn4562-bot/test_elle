@@ -50,7 +50,7 @@
 }
 .header-util {
     display: flex; 
-        justify-content: flex-end;
+    justify-content: flex-end;
     align-items: center;
 }
 .aside {
@@ -61,7 +61,6 @@
 }
 .container {
     display: flex;
-    justify-content: center;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -117,7 +116,6 @@
     display: flex;
     justify-content: space-between;
     border-bottom: var(--stroke-weight-1, 1px) solid var(--color-grey-7, #111);
-    gap: 40px;
 }
 footer {
     border: 1px solid red;
