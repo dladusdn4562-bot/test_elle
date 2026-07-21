@@ -80,10 +80,13 @@
     left: 50%; bottom: 90px;
     transform: translateX(-50%);
 }
+.txtbox>a {
+    display: flex; gap: 15px;
+    flex-direction: column;
+}
 .tit , .txt {
     display: flex;
     justify-content: center;
-    gap: 12px;
     color: #fff;
     text-align: center;
 }
@@ -99,6 +102,11 @@
     position: absolute;
     top: 45%;
 }
+.slide-box>a {
+    opacity: 50%;
+    transition: 0.3s;
+}
+.slide-box>a:hover {opacity: 70%;}
 .before-slide {
     position: absolute;
     left: 40px;
