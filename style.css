@@ -121,10 +121,37 @@
 .after-slide img {
     width: 100px; height: 90px;
 }
+.cate-act-wrap {
+    display: flex;
+    flex-direction: column;
+}
+.pc-mo {
+    padding-bottom: 40px;
+}
 .tit-area {
     display: flex;
     justify-content: space-between;
     border-bottom: var(--stroke-weight-1, 1px) solid var(--color-grey-7, #111);
+}
+.tit-margin {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+.side-margin {
+    display: flex;
+    align-items: center;
+}
+.side-margin::after {
+    content: "+";
+    padding-left: 4px;
+}
+.big-thumb {
+    width: 51%;
+    padding-right: 24px;
+    display: flex;
+}
+.sm-thumb-type2 {
+    background-color: aqua;
 }
 footer {
     border: 1px solid red;
