@@ -104,7 +104,7 @@
 }
 .slide-box>a {
     opacity: 50%;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .slide-box>a:hover {opacity: 70%;}
 .before-slide {
@@ -120,12 +120,6 @@
 }
 .after-slide img {
     width: 100px; height: 90px;
-}
-
-.pc-mo {
-    padding: 0 40px 80px 40px;
-    /* max-width: 1200px; */
-    /* width: 100%; */
 }
 .tit-area {
     display: flex;
