@@ -174,15 +174,19 @@
     flex-wrap: wrap;
 }
 .sm-thumb-type2>ul>li {
-    display: inline-block;
+    display: block;
     width: 50%;
     margin-bottom: 50px;
-    vertical-align: top;
 }
-.t2-li01 {padding-right: 12px;}
+
 .t2-imgbox1>img {
     display: block;
     width: 100%; height: 100%;
+}
+.ab > a{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 footer {
     border: 1px solid red;
