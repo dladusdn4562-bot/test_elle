@@ -50,6 +50,11 @@ header {
     position: absolute;
     left: 50%; top: 20%;
     transform: translateX(-50%);
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: #111;
 }
 .header-util-margin {
     flex: 1;
@@ -60,7 +65,13 @@ header {
     align-items: center;
 }
 .aside {
+    display: flex;
     gap: 24px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #666;
 }
 .btn-search-margin {
     padding-left: 20px;
@@ -143,14 +154,22 @@ header {
 .tit-margin {
     font-size: 48px;
     margin-bottom: 8px;
+    font-family: ;
 }
 .side-margin {
     display: flex;
     align-items: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
 }
 .side-margin::after {
     content: "+";
     padding-left: 4px;
+    font-family: 'Noto Sans KR',sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 .cate-atc-list-pc {
     display: flex;
@@ -161,8 +180,9 @@ header {
     display: block;
     flex-direction: column;
 }
-.atbox {
+.atcbox {
     position: sticky;
+    top: 150px;
 }
 .atbox-img>img {
     display: block;
@@ -172,6 +192,10 @@ header {
 .atbox-txt {
     margin-top: 24px;
     font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
 }
 .sm-thumb-type2 {
     width: 49%;
@@ -181,6 +205,12 @@ header {
     display: block;
     column-count: 2;
     column-gap: 24px;
+}
+.thum-t2-ul{
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
 }
 .sm-thumb-type2>ul>li {
     display: inline-block;
