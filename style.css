@@ -1,9 +1,11 @@
+/* 상단바 고정 */
 header {
     position: sticky;
     top: 0; 
     background-color: #ffffff; 
     z-index: 1000;
 }
+/* 상단바 전체를 담은 박스 */
 .header-wrap {
     display: flex;
     flex-direction: column;
@@ -13,12 +15,14 @@ header {
     gap: 33px;
     margin: 0 auto;
 }
+/* 로고 박스 */
 .cont-inner1 {
     padding-left: 40px; padding-right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* 로고 */
 .logo-box {
     display: flex;
     justify-content: center;
@@ -26,22 +30,25 @@ header {
     font-size: 0;
     line-height: 0;
 }
-/* 보류 */
+/* 메뉴와 카테고리, 로그인 */
 .cont-inner2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
+/* 작대기 3개 메뉴 */
 .btn-menu {
     padding-right: 18px;
     display: flex;
     justify-content: center;
 }
+/* 카테고리 담은 박스 */
 .D-logo>ul {
     display: flex;
     gap: 24px;
 }
+/* 카테고리 */
 .menu-text1-ul {
     display: flex;
     align-items: center;
@@ -56,14 +63,17 @@ header {
     font-size: 18px;
     color: #111;
 }
+/* 로그인, 회원가입 박스 */
 .header-util-margin {
     flex: 1;
 }
+/* 텍스트와 돋보기 아이콘 박스 */
 .header-util {
     display: flex; 
     justify-content: flex-end;
     align-items: center;
 }
+/* 로그인, 회원가입 텍스트 박스 */
 .aside {
     display: flex;
     gap: 24px;
@@ -73,9 +83,11 @@ header {
     font-size: 14px;
     color: #666;
 }
+/* 돋보기 아이콘 박스 */
 .btn-search-margin {
     padding-left: 20px;
 }
+/* 콘텐츠 전체 담은 박스 */
 .container {
     display: flex;
     max-width: 1200px;
@@ -84,6 +96,7 @@ header {
     flex-direction: column;
     gap: var(--item-spacing-100, 100px);
 }
+/* 황정민 배우 이미지 박스 */
 .main-img-box1 {
     overflow: hidden;
     object-fit: cover;
@@ -92,15 +105,18 @@ header {
 .main-img-box1  img {
     width: 1200px;
 }
+/* 이미지 안 텍스트 박스 */
 .txtbox {
     position: absolute;
     left: 50%; bottom: 90px;
     transform: translateX(-50%);
 }
+/* 텍스트 마우스 클릭 */
 .txtbox>a {
     display: flex; gap: 15px;
     flex-direction: column;
 }
+/* 텍스트 설정 */
 .tit , .txt {
     display: flex;
     justify-content: center;
@@ -114,16 +130,20 @@ header {
 .txt {
     font-size: 16px;
 }
+/* 이전, 다음 슬라이드 박스 */
 .slide-box {
     display: flex;
     position: absolute;
     top: 45%;
 }
+/* 화살표 마우스 클릭 */
 .slide-box>a {
     opacity: 50%;
     transition: 0.2s;
 }
+/* 화살표 마우스 호버 반응 불투명도 조절 */
 .slide-box>a:hover {opacity: 70%;}
+/* 이전 슬라이드 화살표 */
 .before-slide {
     position: absolute;
     left: 40px;
@@ -131,6 +151,7 @@ header {
 .before-slide img {
     width: 100px; height: 90px;
 }
+/* 다음 슬라이드 화살표 */
 .after-slide {
     position: absolute;
     right: 40px;
@@ -143,19 +164,22 @@ header {
     display: flex;
     flex-direction: column;
 }
+/* 패션 텍스트와 더보기 + */
 .pc-mo {
     padding-bottom: 40px;
 }
+/* 패션과 더보기 마우스 반응 */
 .tit-area>a {
     display: flex;
     justify-content: space-between;
-    border-bottom: var(--stroke-weight-1, 1px) solid var(--color-grey-7, #111);
+    border-bottom:1px solid #111;
 }
+/* Fashion 텍스트 */
 .tit-margin {
     font-size: 48px;
     margin-bottom: 8px;
-    font-family: ;
 }
+/* 더보기 + */
 .side-margin {
     display: flex;
     align-items: center;
@@ -164,6 +188,7 @@ header {
     font-weight: 500;
     font-size: 14px;
 }
+/* 더보기 옆 + 넣기 */
 .side-margin::after {
     content: "+";
     padding-left: 4px;
@@ -171,9 +196,11 @@ header {
     font-style: normal;
     font-weight: 300;
 }
+/* 패션 섹션 9개 콘텐츠 포함 박스*/
 .cate-atc-list-pc {
     display: flex;
 }
+/* 패션 섹션 우측 큰 콘텐츠 */
 .big-thumb {
     width: 51%;
     padding-right: 24px;
@@ -197,6 +224,7 @@ header {
     font-weight: 500;
     font-size: 26px;
 }
+/* 패션 섹션 8개 콘텐츠 박스 */
 .sm-thumb-type2 {
     width: 49%;
     display: flex;
@@ -218,10 +246,12 @@ header {
     width: 100%;
     margin-bottom: 50px;
 }
+/* 8개 콘텐츠 이미지 */
 .t2-imgbox1>img {
     display: block;
     width: 100%; height: 100%;
 }
+/* 8개 텍스트 */
 .ab > a{
     display: flex;
     flex-direction: column;
