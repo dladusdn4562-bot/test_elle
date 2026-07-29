@@ -2,8 +2,11 @@ video {
     position: fixed;
     top: 0; left: 50%;
     transform: translateX(-50%);
-    width: 100%; height: 100%;
+    width: 1920px; 
+    height: 1080px;
     object-fit: cover;
+    z-index: -1;
+    margin: 0;
 }
 /* 상단바 고정 */
 header {
@@ -11,10 +14,13 @@ header {
     top: 0; 
     background-color: #ffffff; 
     z-index: 1000;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 200px;
 }
 /* 상단바 전체를 담은 박스 */
 .header-wrap {
-    display: flex;
+    display: block;
     flex-direction: column;
     padding-top: 40px; padding-bottom: 17px;
     max-width: 1200px;
@@ -170,6 +176,9 @@ header {
 .cate-act-wrap {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
+    padding: 40px;
+    z-index: 1;
 }
 /* 패션 텍스트와 더보기 + */
 .pc-mo {
