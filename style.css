@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 video {
     position: fixed;
     top: 0; left: 50%;
@@ -49,6 +52,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding-left: 40px; padding-right: 40px;
 }
 /* 작대기 3개 메뉴 */
 .btn-menu {
@@ -107,27 +111,33 @@ header {
     width: 100%;
     margin: 0 auto;
     flex-direction: column;
-    gap: var(--item-spacing-100, 100px);
 }
 .itembox {
     position: relative;
-    padding-top: 56.25%;
+    padding-bottom: 56.25%;
+    width: 100%;
+    height: 0; /* 화면 높이의 70%만큼 빈 공간 생성 */
+    background-color: transparent; 
+    overflow: hidden;
 }
 .pc {
-    display: block;
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 50%;
-    width: 100%; height: 100%;
     transform: translateX(-50%);
+    width: 100%;height: 100%;
+    pointer-events: none; 
+    border: none;
 }
 /* fashion 섹션 시작 */
 .cate-act-wrap {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    padding: 40px;
-    z-index: 1;
+    background-color: #ffffff; /* 하얀색 배경 */
+    position: relative; /* z-index를 작동시키는 기준점 */
+    z-index: 1; /* 비디오보다 위로 올라오도록 설정 */
+    padding-left: 40px; padding-right: 40px;
+    padding-top: 100px; padding-bottom: 60px;
 }
 /* 패션 텍스트와 더보기 + */
 .pc-mo {
@@ -171,6 +181,9 @@ header {
     padding-right: 24px;
     display: block;
     flex-direction: column;
+    position: sticky;
+    top: 120px;
+    align-self: flex-start;
 }
 .atcbox {
     position: sticky;
@@ -188,7 +201,9 @@ header {
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
+    height: 76px;
 }
+.t2>p {padding-bottom: 52px;}
 /* 패션 섹션 8개 콘텐츠 박스 */
 .sm-thumb-type2 {
     width: 49%;
