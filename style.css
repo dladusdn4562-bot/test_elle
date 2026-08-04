@@ -25,7 +25,6 @@ header {
 .header-wrap {
     display: block;
     flex-direction: column;
-    padding-top: 40px; padding-bottom: 17px;
     max-width: 1200px;
     width: 100%;
     gap: 33px;
@@ -34,6 +33,7 @@ header {
 /* 로고 박스 */
 .cont-inner1 {
     padding-left: 40px; padding-right: 40px;
+    padding-top:40px; padding-bottom: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,10 +54,11 @@ header {
     align-items: center;
     position: relative;
     padding-left: 40px; padding-right: 40px;
+    padding-bottom: 17px; padding-top: 17px;
 }
 /* 작대기 3개 메뉴 */
 .btn-menu {
-    padding-right: 18px;
+    padding-right: 18px; 
     display: flex;
     justify-content: center;
 }
@@ -65,7 +66,7 @@ header {
 .D-logo>ul {
     display: flex;
     gap: 24px;
-    padding-top: 17px;
+    
 }
 /* 카테고리 */
 .menu-text1-ul {
