@@ -11,6 +11,9 @@ video {
     z-index: -1;
     margin: 0;
 }
+body {
+    background-color: #FAD67C;
+}
 /* 상단바 고정 */
 header {
     position: sticky;
@@ -66,7 +69,7 @@ header {
 .D-logo>ul {
     display: flex;
     gap: 24px;
-    
+
 }
 /* 카테고리 */
 .menu-text1-ul {
@@ -75,8 +78,8 @@ header {
     justify-content: center;
     width: 700px;
     position: absolute;
-    left: 50%; top: 20%;
-    transform: translateX(-50%);
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
     font-family: "futura-pt", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -184,13 +187,10 @@ header {
     padding-right: 24px;
     display: block;
     flex-direction: column;
-    position: sticky;
-    top: 120px;
-    align-self: flex-start;
 }
 .atcbox {
     position: sticky;
-    top: 150px;
+    top: 100px;
 }
 .atbox-img>img {
     display: block;
@@ -239,6 +239,34 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+.scroll-atc-wrap {
+    background-color: #f5f6f8;
+    padding-top: 100px; padding-bottom: 100px;
+}
+.scroll-cont-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 40px; padding-right: 40px;
+}
+.scr-tlt-wrap {
+    margin-bottom: 40px;
+}
+.scr-tit-area { 
+    display: flex;
+    position: relative;
+}
+.scr-tit {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 46px;
+}
+.hashtag {
+    position: relative;
+    overflow: hidden;
+    margin-top: 12px;
+    font-size: 16px;
+    color: #666;
 }
 footer {
     border: 1px solid red;
