@@ -185,12 +185,9 @@ header {
 .big-thumb {
     width: 51%;
     padding-right: 24px;
-    display: block;
-    flex-direction: column;
-}
-.atcbox {
     position: sticky;
     top: 100px;
+    align-items: flex-start;
 }
 .atbox-img>img {
     display: block;
