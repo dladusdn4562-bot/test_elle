@@ -15,7 +15,7 @@ a {
 }
 button {
     background-color: transparent;
-    padding: auto;
+    /* padding: auto; */
     border: none; outline: none;
     cursor: pointer;
 }
