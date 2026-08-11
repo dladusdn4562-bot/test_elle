@@ -12,7 +12,7 @@ header {
 }
 /* 상단바 전체를 담은 박스 */
 .header-wrap {
-    display: block;
+    display: flex;
     flex-direction: column;
     max-width: 1200px;
     width: 100%;
@@ -183,14 +183,12 @@ header {
 }
 .atbox-txt {
     margin-top: 24px;
-    font-size: 16px;
     font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
     height: 76px;
 }
-.t2>p {padding-bottom: 52px;}
 /* 패션 섹션 8개 콘텐츠 박스 */
 .sm-thumb-type2 {
     width: 49%;
@@ -199,7 +197,6 @@ header {
 .sm-thumb-type2>ul {
     display: block;
     column-count: 2;
-    column-gap: 24px;
 }
 .thum-t2-ul{
     font-family: "Noto Sans KR", sans-serif;
@@ -207,7 +204,7 @@ header {
     font-weight: 500;
     font-size: 18px;
 }
-.sm-thumb-type2>ul>li {
+.sm-thumb-type2 li {
     display: inline-block;
     break-inside: avoid;
     width: 100%;
@@ -233,7 +230,7 @@ header {
     margin: 0 auto;
     padding-left: 40px; padding-right: 40px;
 }
-.scr-tlt-wrap {
+.scr-tit-wrap {
     margin-bottom: 40px;
 }
 .scr-tit-area { 
@@ -258,7 +255,12 @@ header {
     box-sizing: content-box;
 }
 .swiper-slide {
+<<<<<<< HEAD
     width:371 ; height: 100%;
+=======
+    width:371px ; height: 100%;
+    margin-right: 20px;
+>>>>>>> 62b09aae9290e08eb2aadd125a1f58d602b1c4b8
 }
 .slide-imgbox {
     padding-top: 50px;
