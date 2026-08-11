@@ -1,19 +1,6 @@
 * {
     box-sizing: border-box;
 }
-video {
-    position: fixed;
-    top: 0; left: 50%;
-    transform: translateX(-50%);
-    width: 1920px; 
-    height: 1080px;
-    object-fit: cover;
-    z-index: -1;
-    margin: 0;
-}
-body {
-    background-color: #FAD67C;
-}
 /* 상단바 고정 */
 header {
     position: sticky;
@@ -22,7 +9,6 @@ header {
     z-index: 1000;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 200px;
 }
 /* 상단바 전체를 담은 박스 */
 .header-wrap {
@@ -273,15 +259,19 @@ header {
 }
 .swiper-slide {
     width:371 ; height: 100%;
-    margin-right: 20px;
 }
 .slide-imgbox {
     padding-top: 50px;
     overflow: hidden;
     width: 100%;
 }
-.slide-txtbox {
-    margin-top: 12px;
+.slide-imgbox ul {
+    display: flex;
+    gap: 24px;
+}
+.slide-imgbox li {
+    background-color: #666;
+    width: 400px; height: 300px;
 }
 footer {
     border: 1px solid red;
