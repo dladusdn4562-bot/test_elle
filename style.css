@@ -7,9 +7,8 @@ header {
     top: 0; 
     background-color: #ffffff; 
     z-index: 1000;
-    max-width: 1200px;
-    margin: 0 auto;
 }
+
 /* 상단바 전체를 담은 박스 */
 .header-wrap {
     display: flex;
@@ -17,7 +16,7 @@ header {
     max-width: 1200px;
     width: 100%;
     gap: 33px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 /* 로고 박스 */
 .cont-inner1 {
@@ -228,7 +227,7 @@ header {
 .scroll-cont-inner {
     max-width: 1280px;
     margin: 0 auto;
-    padding-left: 40px; padding-right: 40px;
+    padding-left: 40px;
 }
 .scr-tit-wrap {
     margin-bottom: 40px;
@@ -249,32 +248,46 @@ header {
     font-size: 16px;
     color: #666;
 }
-.swiper-wrapper{    
-    width: 100%; height: 100%;
-    display: flex;
-    box-sizing: content-box;
-}
-.swiper-slide {
-<<<<<<< HEAD
-    width:371 ; height: 100%;
-=======
-    width:371px ; height: 100%;
-    margin-right: 20px;
->>>>>>> 62b09aae9290e08eb2aadd125a1f58d602b1c4b8
-}
-.slide-imgbox {
-    padding-top: 50px;
-    overflow: hidden;
+/* 가로 스크롤 영역 */
+.scroll-atc-list {
     width: 100%;
+    overflow-x: auto;
+    padding-bottom: 24px;
 }
-.slide-imgbox ul {
+
+/* 가로 나열 리스트 */
+.sl-ib-ul {
     display: flex;
     gap: 24px;
 }
-.slide-imgbox li {
-    background-color: #666;
-    width: 400px; height: 300px;
+.slib-li a {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+/* 이미지 박스 */
+.slide-imgbox {
+    width: 100%;
+    height: 340px; /* 세로 높이도 큼직하게 지정 */
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.slide-imgbox img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* 텍스트 박스 */
+.slib-li-txtbox p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 footer {
     border: 1px solid red;
 }
