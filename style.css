@@ -41,7 +41,6 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-left: 40px; padding-right: 40px;
     padding-bottom: 17px; padding-top: 17px;
 }
 /* 작대기 3개 메뉴 */
@@ -127,7 +126,6 @@ header {
     background-color: #ffffff; /* 하얀색 배경 */
     position: relative; /* z-index를 작동시키는 기준점 */
     z-index: 1; /* 비디오보다 위로 올라오도록 설정 */
-    padding-left: 40px; padding-right: 40px;
     padding-top: 100px; padding-bottom: 60px;
 }
 /* 패션 텍스트와 더보기 + */
@@ -225,9 +223,8 @@ header {
     padding-top: 100px; padding-bottom: 100px;
 }
 .scroll-cont-inner {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-left: 40px;
+    width: 100%;
+    padding-left: 190px;
 }
 .scr-tit-wrap {
     margin-bottom: 40px;
@@ -251,29 +248,35 @@ header {
 /* 가로 스크롤 영역 */
 .scroll-atc-list {
     width: 100%;
+    height: 100%;
+    box-sizing: content-box;
     overflow-x: auto;
-    padding-bottom: 24px;
+    padding-bottom: 50px;
 }
-
+.scroll-atc-list::-webkit-scrollbar{
+    height: 2px;
+}
+.scroll-atc-list::-webkit-scrollbar-track{
+    background-color: #ffffff;
+}
+.scroll-atc-list::-webkit-scrollbar-thumb{
+    background-color: #111111;
+}
 /* 가로 나열 리스트 */
 .sl-ib-ul {
     display: flex;
     gap: 24px;
+
+}
+.slib-li {
+    flex-shrink: 0;
+    width: 26%;
 }
 .slib-li a {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
-/* 이미지 박스 */
-.slide-imgbox {
-    width: 100%;
-    height: 340px; /* 세로 높이도 큼직하게 지정 */
-    overflow: hidden;
-    border-radius: 6px;
-}
-
 .slide-imgbox img {
     width: 100%;
     height: 100%;
@@ -284,7 +287,7 @@ header {
 /* 텍스트 박스 */
 .slib-li-txtbox p {
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
 }
 
