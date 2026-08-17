@@ -132,11 +132,20 @@ header {
 .pc-mo {
     padding-bottom: 40px;
 }
+.tit-area {
+    border-bottom:1px solid #111;
+}
 /* 패션과 더보기 마우스 반응 */
 .tit-area>a {
     display: flex;
     justify-content: space-between;
-    border-bottom:1px solid #111;
+}
+.tit-area h3 {
+    font-size: 3rem;
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.07em;
 }
 /* Fashion 텍스트 */
 .tit-margin {
@@ -224,10 +233,10 @@ header {
 }
 .scroll-cont-inner {
     width: 100%;
-    padding-left: 190px;
 }
 .scr-tit-wrap {
     margin-bottom: 40px;
+    padding-left: 190px;
 }
 .scr-tit-area { 
     display: flex;
@@ -254,19 +263,41 @@ header {
     padding-bottom: 50px;
 }
 .scroll-atc-list::-webkit-scrollbar{
-    height: 2px;
+    height: 10px;
 }
 .scroll-atc-list::-webkit-scrollbar-track{
-    background-color: #ffffff;
+    background-color: #fff;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    background-clip: padding-box;
 }
 .scroll-atc-list::-webkit-scrollbar-thumb{
-    background-color: #111111;
+    background-color: #333333;
+    border-top: 5px solid transparent;
+    border-bottom: 4px solid transparent;
+    background-clip: padding-box;
+    border-radius:10px ;
+}
+ .scroll-atc-list::-webkit-scrollbar-button:horizontal:decrement,                                                                                                          
+.scroll-atc-list::-webkit-scrollbar-button:horizontal:increment {                                                                                                         
+    display: block;                                                                                                                                                       
+    width: 6vw;                  /* 양 옆 여백 크기 */                                                                                                                  
+    background-color: transparent; /* 투명 처리 */                                                                                                                        
+}
+.scroll-atc-list::-webkit-scrollbar {  
+    height: 10px;                                                                                                                                                                                                                                                 
 }
 /* 가로 나열 리스트 */
 .sl-ib-ul {
     display: flex;
     gap: 24px;
-
+    padding-left: 190px;
+}
+.sl-ib-ul::after{
+    content: "";
+    display: block;
+    width: 190px;
+    flex-shrink:0 ;
 }
 .slib-li {
     flex-shrink: 0;
@@ -290,7 +321,27 @@ header {
     font-size: 17px;
     font-weight: 500;
 }
-
+.issue-atc-list {
+    display: block;
+}
+.swiper-wrapper {
+    display: flex;
+    position: relative;
+    box-sizing: content-box;
+}
+.issue-atc-list li {
+    width: 25%; height: 100%;
+    padding: 0 12px;
+    flex-shrink: 0;
+    position: relative;
+}
+.atbox-img .imgbox img {
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
 footer {
     border: 1px solid red;
 }
