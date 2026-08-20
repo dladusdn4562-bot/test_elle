@@ -236,7 +236,7 @@ header {
 }
 .scr-tit-wrap {
     margin-bottom: 40px;
-    padding-left: 190px;
+    padding-left: 230px;
 }
 .scr-tit-area { 
     display: flex;
@@ -262,6 +262,7 @@ header {
     overflow-x: auto;
     padding-bottom: 50px;
 }
+.scr-tit , .hashtag {font-weight: 600;}
 .scroll-atc-list::-webkit-scrollbar{
     height: 10px;
 }
@@ -291,7 +292,7 @@ header {
 .sl-ib-ul {
     display: flex;
     gap: 24px;
-    padding-left: 190px;
+    padding-left: 230px;
 }
 .sl-ib-ul::after{
     content: "";
@@ -335,13 +336,13 @@ header {
     flex-shrink: 0;
     position: relative;
 }
-.atbox-img .imgbox img {
+/* .atbox-img .imgbox img {
     display: block;
     position: absolute;
     left: 0; top: 0;
     width: 100%; height: 100%;
     object-fit: cover;
-}
+} */
 footer {
     border: 1px solid red;
 }
