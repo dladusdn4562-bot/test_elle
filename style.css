@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 /* 상단바 고정 */
 header {
     position: sticky;
@@ -16,16 +17,17 @@ header {
     max-width: 1200px;
     width: 100%;
     gap: 33px;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 /* 로고 박스 */
 .cont-inner1 {
-    padding-left: 40px; padding-right: 40px;
-    padding-top:40px; padding-bottom: 16px;
+    padding: 40px 40px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* 로고 */
 .logo-box {
     display: flex;
@@ -35,65 +37,67 @@ header {
     line-height: 0;
     padding-bottom: 16px;
 }
+
 /* 메뉴와 카테고리, 로그인 */
 .cont-inner2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding-bottom: 17px; padding-top: 17px;
+    padding: 17px 0;
 }
+
 /* 작대기 3개 메뉴 */
 .btn-menu {
     padding-right: 18px; 
     display: flex;
     justify-content: center;
 }
-/* 카테고리 담은 박스 */
-.D-logo>ul {
-    display: flex;
-    gap: 24px;
 
-}
 /* 카테고리 */
 .menu-text1-ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 24px;
     width: 700px;
     position: absolute;
-    left: 50%; top: 50%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     font-family: "futura-pt", sans-serif;
     font-weight: 500;
-    font-style: normal;
     font-size: 18px;
     color: #111;
 }
+
 /* 로그인, 회원가입 박스 */
 .header-util-margin {
     flex: 1;
 }
+
 /* 텍스트와 돋보기 아이콘 박스 */
 .header-util {
     display: flex; 
     justify-content: flex-end;
     align-items: center;
 }
+
 /* 로그인, 회원가입 텍스트 박스 */
 .aside {
     display: flex;
     gap: 24px;
     font-family: "futura-pt", sans-serif;
     font-weight: 300;
-    font-style: normal;
     font-size: 14px;
     color: #666;
 }
+
 /* 돋보기 아이콘 박스 */
 .btn-search-margin {
     padding-left: 20px;
 }
+
 /* 콘텐츠 전체 담은 박스 */
 .container {
     display: flex;
@@ -102,77 +106,80 @@ header {
     margin: 0 auto;
     flex-direction: column;
 }
+
 .itembox {
     position: relative;
     padding-bottom: 56.25%;
     width: 100%;
-    height: 0; /* 화면 높이의 70%만큼 빈 공간 생성 */
+    height: 0;
     background-color: transparent; 
     overflow: hidden;
 }
+
 .pc {
     position: absolute; 
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;height: 100%;
+    width: 100%;
+    height: 100%;
     pointer-events: none; 
     border: none;
 }
+
 /* fashion 섹션 시작 */
 .cate-act-wrap {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff; /* 하얀색 배경 */
-    position: relative; /* z-index를 작동시키는 기준점 */
-    z-index: 1; /* 비디오보다 위로 올라오도록 설정 */
-    padding-top: 100px; padding-bottom: 60px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0 60px;
 }
+
 /* 패션 텍스트와 더보기 + */
 .pc-mo {
     padding-bottom: 40px;
 }
+
 .tit-area {
-    border-bottom:1px solid #111;
+    border-bottom: 1px solid #111;
 }
+
 /* 패션과 더보기 마우스 반응 */
-.tit-area>a {
+.tit-area > a {
     display: flex;
     justify-content: space-between;
 }
+
 .tit-area h3 {
-    font-size: 3rem;
+    font-size: 48px;
     font-family: "Oranienbaum", serif;
     font-weight: 400;
-    font-style: normal;
     letter-spacing: 0.07em;
-}
-/* Fashion 텍스트 */
-.tit-margin {
-    font-size: 48px;
     margin-bottom: 8px;
 }
+
 /* 더보기 + */
 .side-margin {
     display: flex;
     align-items: center;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
 }
+
 /* 더보기 옆 + 넣기 */
 .side-margin::after {
     content: "+";
     padding-left: 4px;
-    font-family: 'Noto Sans KR',sans-serif;
-    font-style: normal;
     font-weight: 300;
 }
-/* 패션 섹션 9개 콘텐츠 포함 박스*/
+
+/* 패션 섹션 9개 콘텐츠 포함 박스 */
 .cate-atc-list-pc {
     display: flex;
 }
+
 /* 패션 섹션 우측 큰 콘텐츠 */
 .big-thumb {
     width: 51%;
@@ -182,78 +189,83 @@ header {
     align-self: flex-start;
     margin-bottom: 50px;
 }
-.atbox-img>img {
-    display: block;
-    width: 100%; height: 100%;
-    position: relative;
+
+.atbox-img > img,
+.t2-imgbox1 > img {
+    width: 100%;
+    height: 100%;
 }
+
 .atbox-txt {
     margin-top: 24px;
-    font-family: "Noto Sans KR", sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 26px;
     height: 76px;
 }
+
 /* 패션 섹션 8개 콘텐츠 박스 */
 .sm-thumb-type2 {
     width: 49%;
     display: flex;
 } 
-.sm-thumb-type2>ul {
+
+.sm-thumb-type2 > ul {
     display: block;
     column-count: 2;
 }
-.thum-t2-ul{
-    font-family: "Noto Sans KR", sans-serif;
-    font-style: normal;
+
+.thum-t2-ul {
     font-weight: 500;
     font-size: 18px;
 }
+
 .sm-thumb-type2 li {
     display: inline-block;
     break-inside: avoid;
     width: 100%;
     margin-bottom: 50px;
 }
-/* 8개 콘텐츠 이미지 */
-.t2-imgbox1>img {
-    display: block;
-    width: 100%; height: 100%;
-}
+
 /* 8개 텍스트 */
-.ab > a{
+.ab > a {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+
 .scroll-atc-wrap {
     background-color: #f5f6f8;
-    padding-top: 100px; padding-bottom: 100px;
+    padding: 100px 0;
 }
+
 .scroll-cont-inner {
     width: 100%;
 }
+
 .scr-tit-wrap {
     margin-bottom: 40px;
-    padding-left: 230px;
 }
+
 .scr-tit-area { 
     display: flex;
     position: relative;
 }
+
 .scr-tit {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 46px;
 }
+
 .hashtag {
     position: relative;
     overflow: hidden;
     margin-top: 12px;
     font-size: 16px;
+    font-weight: 600;
     color: #666;
 }
+
 /* 가로 스크롤 영역 */
 .scroll-atc-list {
     width: 100%;
@@ -262,87 +274,114 @@ header {
     overflow-x: auto;
     padding-bottom: 50px;
 }
-.scr-tit , .hashtag {font-weight: 600;}
-.scroll-atc-list::-webkit-scrollbar{
+
+.scroll-atc-list::-webkit-scrollbar {
     height: 10px;
 }
-.scroll-atc-list::-webkit-scrollbar-track{
+
+.scroll-atc-list::-webkit-scrollbar-track {
     background-color: #fff;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     background-clip: padding-box;
 }
-.scroll-atc-list::-webkit-scrollbar-thumb{
+
+.scroll-atc-list::-webkit-scrollbar-thumb {
     background-color: #333333;
     border-top: 5px solid transparent;
     border-bottom: 4px solid transparent;
     background-clip: padding-box;
-    border-radius:10px ;
+    border-radius: 10px;
 }
- .scroll-atc-list::-webkit-scrollbar-button:horizontal:decrement,                                                                                                          
-.scroll-atc-list::-webkit-scrollbar-button:horizontal:increment {                                                                                                         
-    display: block;                                                                                                                                                       
-    width: 6vw;                  /* 양 옆 여백 크기 */                                                                                                                  
-    background-color: transparent; /* 투명 처리 */                                                                                                                        
+
+.scroll-atc-list::-webkit-scrollbar-button:horizontal:decrement,
+.scroll-atc-list::-webkit-scrollbar-button:horizontal:increment {
+    display: block;
+    width: 6vw;
+    background-color: transparent;
 }
-.scroll-atc-list::-webkit-scrollbar {  
-    height: 10px;                                                                                                                                                                                                                                                 
-}
+
 /* 가로 나열 리스트 */
 .sl-ib-ul {
     display: flex;
     gap: 24px;
-    padding-left: 230px;
+    padding-left: max(calc((100% - 1200px) / 2), 20px);
 }
-.sl-ib-ul::after{
+
+.sl-ib-ul::after {
     content: "";
     display: block;
     width: 190px;
-    flex-shrink:0 ;
+    flex-shrink: 0;
 }
+
 .slib-li {
     flex-shrink: 0;
     width: 26%;
 }
+
 .slib-li a {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .slide-imgbox img {
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
 }
 
 /* 텍스트 박스 */
 .slib-li-txtbox p {
-    font-family: "Noto Sans KR", sans-serif;
     font-size: 17px;
     font-weight: 500;
 }
+
 .issue-atc-list {
     display: block;
 }
+
 .swiper-wrapper {
     display: flex;
     position: relative;
     box-sizing: content-box;
 }
+
 .issue-atc-list li {
-    width: 25%; height: 100%;
+    width: 25%;
+    height: 100%;
     padding: 0 12px;
     flex-shrink: 0;
     position: relative;
 }
-/* .atbox-img .imgbox img {
-    display: block;
-    position: absolute;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
+
+/* TODAY'S PICK 이미지 크기 및 텍스트 스타일 */
+.issue-atc-list .imgbox img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-} */
+}
+
+.issue-atc-list .txtbox {
+    margin-top: 16px;
+}
+
+.issue-atc-list .cate {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.issue-atc-list .tit {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #111;
+}
+
 footer {
     border: 1px solid red;
 }
