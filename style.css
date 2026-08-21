@@ -297,7 +297,7 @@ header {
 .scroll-atc-list::-webkit-scrollbar-button:horizontal:decrement,
 .scroll-atc-list::-webkit-scrollbar-button:horizontal:increment {
     display: block;
-    width: 6vw;
+    max-width: 1200px;
     background-color: transparent;
 }
 
