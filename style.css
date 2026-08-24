@@ -236,6 +236,7 @@ header {
 .scroll-atc-wrap {
     background-color: #f5f6f8;
     padding: 100px 0;
+    margin-bottom: 80px;
 }
 
 .scroll-cont-inner {
@@ -378,10 +379,51 @@ header {
 .issue-atc-list .tit {
     font-size: 17px;
     font-weight: 500;
-    line-height: 1.4;
     color: #111;
 }
+<!-- weekly best 섹션 -->
+.top3-atc-list {
+    display: block;
+}
 
+.top3-swiper-wrapper {
+    display: flex;
+}
+
+.top3-atc-list li {
+    width: 33%;
+    padding: 0 12px;
+    flex-shrink: 0;
+    position: relative;
+}
+.top3-atc-list .numbox {
+    font-size: 48px;
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+}
+.top3-atc-list .imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top3-atc-list .txtbox {
+    margin-top: 16px;
+}
+
+.top3-atc-list .cate {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: #CC0000;
+    margin-bottom: 8px;
+}
+
+.top3-atc-list .tit {
+    font-size: 17px;
+    font-weight: 500;
+    color: #111;
+}
 footer {
     border: 1px solid red;
 }
