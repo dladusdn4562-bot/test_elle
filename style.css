@@ -1,8 +1,27 @@
+/* ==========================================================================
+   1. 전역 및 공통 스타일 (Global & Common)
+   ========================================================================== */
+
+/* 전체 요소 패딩/테두리를 포함한 크기 계산 */
 * {
     box-sizing: border-box;
 }
 
-/* 상단바 고정 */
+/* 콘텐츠 중앙 정렬 및 최대 너비 공통 컨테이너 */
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+
+/* ==========================================================================
+   2. 헤더 영역 (Header / Navigation)
+   ========================================================================== */
+
+/* 상단바 고정 (스크롤 시 상단에 유지) */
 header {
     position: sticky;
     top: 0; 
@@ -10,7 +29,7 @@ header {
     z-index: 1000;
 }
 
-/* 상단바 전체를 담은 박스 */
+/* 상단바 전체를 담은 래퍼 (최대 1200px 중앙 배치) */
 .header-wrap {
     display: flex;
     flex-direction: column;
@@ -20,7 +39,7 @@ header {
     margin: 0 auto;
 }
 
-/* 로고 박스 */
+/* 상단 1열: 로고 영역 박스 */
 .cont-inner1 {
     padding: 40px 40px 16px;
     display: flex;
@@ -28,7 +47,7 @@ header {
     align-items: center;
 }
 
-/* 로고 */
+/* 메인 로고 (ELLE SVG) */
 .logo-box {
     display: flex;
     justify-content: center;
@@ -38,7 +57,7 @@ header {
     padding-bottom: 16px;
 }
 
-/* 메뉴와 카테고리, 로그인 */
+/* 상단 2열: 햄버거 메뉴, 메인 카테고리(GNB), 유틸 메뉴(로그인/검색) 래퍼 */
 .cont-inner2 {
     display: flex;
     justify-content: space-between;
@@ -47,14 +66,14 @@ header {
     padding: 17px 0;
 }
 
-/* 작대기 3개 메뉴 */
+/* 좌측 햄버거 메뉴 버튼 (3줄 아이콘) */
 .btn-menu {
     padding-right: 18px; 
     display: flex;
     justify-content: center;
 }
 
-/* 카테고리 */
+/* 중앙 메인 카테고리 메뉴 목록 (GNB: FASHION, BEAUTY, STAR...) */
 .menu-text1-ul {
     display: flex;
     align-items: center;
@@ -71,19 +90,19 @@ header {
     color: #111;
 }
 
-/* 로그인, 회원가입 박스 */
+/* 우측 유틸리티 메뉴 컨테이너 */
 .header-util-margin {
     flex: 1;
 }
 
-/* 텍스트와 돋보기 아이콘 박스 */
+/* 우측 로그인/회원가입 및 검색 아이콘 래퍼 */
 .header-util {
     display: flex; 
     justify-content: flex-end;
     align-items: center;
 }
 
-/* 로그인, 회원가입 텍스트 박스 */
+/* 로그인 / 회원가입 텍스트 링크 */
 .aside {
     display: flex;
     gap: 24px;
@@ -93,20 +112,17 @@ header {
     color: #666;
 }
 
-/* 돋보기 아이콘 박스 */
+/* 검색 돋보기 아이콘 버튼 여백 */
 .btn-search-margin {
     padding-left: 20px;
 }
 
-/* 콘텐츠 전체 담은 박스 */
-.container {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    flex-direction: column;
-}
 
+/* ==========================================================================
+   3. 메인 배너 / 비디오 히어로 영역 (Hero Video Banner)
+   ========================================================================== */
+
+/* 16:9 비율 유지용 반응형 비디오 박스 */
 .itembox {
     position: relative;
     padding-bottom: 56.25%;
@@ -116,6 +132,7 @@ header {
     overflow: hidden;
 }
 
+/* 배경 동영상 iframe (클릭 이벤트 차단 및 꽉 차게 설정) */
 .pc {
     position: absolute; 
     top: 0;
@@ -127,7 +144,12 @@ header {
     border: none;
 }
 
-/* fashion 섹션 시작 */
+
+/* ==========================================================================
+   4. 기사 섹션 공통 스타일 (Article Section Common)
+   ========================================================================== */
+
+/* 개별 기사 섹션 전체 래퍼 (FASHION, TODAY'S PICK, BEAUTY, WEEKLY BEST 등) */
 .cate-act-wrap {
     display: flex;
     flex-direction: column;
@@ -137,21 +159,23 @@ header {
     padding: 100px 0 60px;
 }
 
-/* 패션 텍스트와 더보기 + */
+/* 섹션 타이틀 감싸는 여백 박스 */
 .pc-mo {
     padding-bottom: 40px;
 }
 
+/* 섹션 제목 하단 구분선 */
 .tit-area {
     border-bottom: 1px solid #111;
 }
 
-/* 패션과 더보기 마우스 반응 */
+/* 섹션 제목 + 더보기 링크 배치 (양 끝 정렬) */
 .tit-area > a {
     display: flex;
     justify-content: space-between;
 }
 
+/* 영문 세리프 대제목 */
 .tit-area h3 {
     font-size: 48px;
     font-family: "Oranienbaum", serif;
@@ -160,7 +184,7 @@ header {
     margin-bottom: 8px;
 }
 
-/* 더보기 + */
+/* 우측 '더보기' 텍스트 */
 .side-margin {
     display: flex;
     align-items: center;
@@ -168,19 +192,24 @@ header {
     font-size: 14px;
 }
 
-/* 더보기 옆 + 넣기 */
+/* '더보기' 우측 '+' 기호 가상 요소 */
 .side-margin::after {
     content: "+";
     padding-left: 4px;
     font-weight: 300;
 }
 
-/* 패션 섹션 9개 콘텐츠 포함 박스 */
+
+/* ==========================================================================
+   5. 메인 기사 그리드 레이아웃 (FASHION & BEAUTY: 1대형 + 8소형)
+   ========================================================================== */
+
+/* 1개 대형 + 8개 소형 기사 좌우 배치 래퍼 */
 .cate-atc-list-pc {
     display: flex;
 }
 
-/* 패션 섹션 우측 큰 콘텐츠 */
+/* 좌측 대형 대표 기사 박스 (스크롤 시 상단 고정: Sticky) */
 .big-thumb {
     width: 51%;
     padding-right: 24px;
@@ -190,12 +219,14 @@ header {
     margin-bottom: 50px;
 }
 
+/* 기사 이미지 공통 비율 채우기 */
 .atbox-img > img,
 .t2-imgbox1 > img {
     width: 100%;
     height: 100%;
 }
 
+/* 대형 기사 텍스트 제목 */
 .atbox-txt {
     margin-top: 24px;
     font-weight: 500;
@@ -203,22 +234,25 @@ header {
     height: 76px;
 }
 
-/* 패션 섹션 8개 콘텐츠 박스 */
+/* 우측 8개 서브 기사 영역 (2열 다단 레이아웃) */
 .sm-thumb-type2 {
     width: 49%;
     display: flex;
 } 
 
+/* 2열 다단(column-count) 리스트 */
 .sm-thumb-type2 > ul {
     display: block;
     column-count: 2;
 }
 
+/* 서브 기사 폰트 설정 */
 .thum-t2-ul {
     font-weight: 500;
     font-size: 18px;
 }
 
+/* 서브 기사 개별 항목 (다단 줄바꿈 끊김 방지) */
 .sm-thumb-type2 li {
     display: inline-block;
     break-inside: avoid;
@@ -226,13 +260,19 @@ header {
     margin-bottom: 50px;
 }
 
-/* 8개 텍스트 */
+/* 서브 기사 링크 (이미지와 텍스트 간격) */
 .ab > a {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
+
+/* ==========================================================================
+   6. 가로 스크롤 추천 기사 섹션 (Horizontal Scroll Section - 2026 가을 필수템)
+   ========================================================================== */
+
+/* 가로 스크롤 섹션 전체 배경 래퍼 */
 .scroll-atc-wrap {
     background-color: #f5f6f8;
     padding: 100px 0;
@@ -243,6 +283,7 @@ header {
     width: 100%;
 }
 
+/* 섹션 타이틀 박스 여백 */
 .scr-tit-wrap {
     margin-bottom: 40px;
 }
@@ -252,12 +293,14 @@ header {
     position: relative;
 }
 
+/* 섹션 한글 제목 */
 .scr-tit {
     font-size: 32px;
     font-weight: 600;
     line-height: 46px;
 }
 
+/* 서브 설명 문구 / 해시태그 */
 .hashtag {
     position: relative;
     overflow: hidden;
@@ -267,7 +310,7 @@ header {
     color: #666;
 }
 
-/* 가로 스크롤 영역 */
+/* 가로 스크롤 컨테이너 */
 .scroll-atc-list {
     width: 100%;
     height: 100%;
@@ -276,10 +319,12 @@ header {
     padding-bottom: 50px;
 }
 
+/* 커스텀 스크롤바: 바 두께 */
 .scroll-atc-list::-webkit-scrollbar {
     height: 10px;
 }
 
+/* 커스텀 스크롤바: 트랙(배경) */
 .scroll-atc-list::-webkit-scrollbar-track {
     background-color: #fff;
     border-top: 4px solid transparent;
@@ -287,6 +332,7 @@ header {
     background-clip: padding-box;
 }
 
+/* 커스텀 스크롤바: 썸(움직이는 막대) */
 .scroll-atc-list::-webkit-scrollbar-thumb {
     background-color: #333333;
     border-top: 5px solid transparent;
@@ -295,6 +341,7 @@ header {
     border-radius: 10px;
 }
 
+/* 스크롤바 양끝 버튼 여백 */
 .scroll-atc-list::-webkit-scrollbar-button:horizontal:decrement,
 .scroll-atc-list::-webkit-scrollbar-button:horizontal:increment {
     display: block;
@@ -302,13 +349,14 @@ header {
     background-color: transparent;
 }
 
-/* 가로 나열 리스트 */
+/* 가로 나열 카드 목록 */
 .sl-ib-ul {
     display: flex;
     gap: 24px;
     padding-left: max(calc((100% - 1200px) / 2), 20px);
 }
 
+/* 리스트 우측 여백 확보용 가상 요소 */
 .sl-ib-ul::after {
     content: "";
     display: block;
@@ -316,6 +364,7 @@ header {
     flex-shrink: 0;
 }
 
+/* 개별 가로 스크롤 카드 */
 .slib-li {
     flex-shrink: 0;
     width: 26%;
@@ -327,17 +376,23 @@ header {
     gap: 20px;
 }
 
+/* 카드 이미지 박스 */
 .slide-imgbox img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* 텍스트 박스 */
+/* 카드 텍스트 박스 */
 .slib-li-txtbox p {
     font-size: 17px;
     font-weight: 500;
 }
+
+
+/* ==========================================================================
+   7. 투데이 픽 섹션 (TODAY'S PICK - 4열 카드 리스트)
+   ========================================================================== */
 
 .issue-atc-list {
     display: block;
@@ -349,6 +404,7 @@ header {
     box-sizing: content-box;
 }
 
+/* 4개 균등 분할 카드 (각 25%) */
 .issue-atc-list li {
     width: 25%;
     height: 100%;
@@ -357,17 +413,19 @@ header {
     position: relative;
 }
 
-/* TODAY'S PICK 이미지 크기 및 텍스트 스타일 */
+/* 썸네일 이미지 */
 .issue-atc-list .imgbox img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* 텍스트 컨테이너 */
 .issue-atc-list .txtbox {
     margin-top: 16px;
 }
 
+/* 카테고리 태그 (빨간색) */
 .issue-atc-list .cate {
     display: block;
     font-size: 11px;
@@ -376,12 +434,18 @@ header {
     margin-bottom: 8px;
 }
 
+/* 기사 제목 */
 .issue-atc-list .tit {
     font-size: 17px;
     font-weight: 500;
     color: #111;
 }
-<!-- weekly best 섹션 -->
+
+
+/* ==========================================================================
+   8. 위클리 베스트 섹션 (WEEKLY BEST - TOP 3 순위 리스트)
+   ========================================================================== */
+
 .top3-atc-list {
     display: block;
 }
@@ -390,27 +454,34 @@ header {
     display: flex;
 }
 
+/* 3개 균등 분할 카드 (각 33.3%) */
 .top3-atc-list li {
     width: 33%;
     padding: 0 12px;
     flex-shrink: 0;
     position: relative;
 }
+
+/* 순위 숫자 (01, 02, 03 대형 세리프 폰트) */
 .top3-atc-list .numbox {
     font-size: 48px;
     font-family: "Oranienbaum", serif;
     font-weight: 400;
 }
+
+/* 순위 카드 이미지 */
 .top3-atc-list .imgbox img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* 순위 카드 텍스트 */
 .top3-atc-list .txtbox {
     margin-top: 16px;
 }
 
+/* 카테고리 태그 (빨간색) */
 .top3-atc-list .cate {
     display: block;
     font-size: 11px;
@@ -419,11 +490,27 @@ header {
     margin-bottom: 8px;
 }
 
+/* 기사 제목 */
 .top3-atc-list .tit {
     font-size: 17px;
     font-weight: 500;
     color: #111;
 }
+.swiper2-slide {
+    display: flex;
+    gap: 24px;
+}
+.rect_atc_area2 {
+    display: flex;
+}
+.rect-item {
+    display: block;
+}
+
+/* ==========================================================================
+      object-fit: cover; 9. 푸터 영역 (Footer)
+   ========================================================================== */
+
 footer {
     border: 1px solid red;
 }

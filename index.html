@@ -4,58 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>엘르 코리아 ELLE</title>
+    
+    <!-- 구글 웹폰트 & Adobe Typekit 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Oranienbaum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xga5xva.css">
     
+    <!-- CSS 스타일시트 연결 -->
     <link rel="stylesheet" href="normal.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ==========================================================================
+         [HEADER] 상단 헤더 영역 (로고 + GNB + 유틸리티)
+         ========================================================================== -->
     <header>
-        <!-- 로고와 메뉴바를 다 담은 상자 -->
+        <!-- 헤더 전체 래퍼 (최대 너비 1200px) -->
         <div class="header-wrap">
-            <!-- 로고 상자 -->
+            
+            <!-- 1. 상단 로고 영역 -->
             <div class="cont-inner1">
-                <!-- 로고 -->
                 <h1 class="logo-box">
                     <a href="#" target="_blank" title="home">
+                        <!-- ELLE SVG 로고 -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 150 50" fill="none">
-                        <g clip-path="url(#clip0_541_1966)">
-                        <mask id="mask0_541_1966" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="150" height="50">
-                        <path d="M150 0H0V49.3151H150V0Z" fill="white"/>
-                        </mask>
-                        <g mask="url(#mask0_541_1966)">
-                        <path d="M148.591 36.0734C148.591 47.2991 143.734 48.495 138.168 48.495V24.1527C143.41 24.1527 143.922 27.7516 143.922 33.0475H144.373V14.6313H143.922C143.922 19.931 143.41 23.716 138.168 23.716V0.820019C143.73 0.820019 148.207 1.70078 148.207 13.1811H148.653V0H128.707V0.440382H132.286V48.8708H128.707V49.3151H149.038V36.0695H148.591V36.0734ZM95.2695 19.0465V0.440382H98.8492V0H85.8084V0.440382H89.3881V48.8708H85.8084V49.3151H106.139V36.0695H105.693C105.693 47.2954 100.831 48.8708 95.2734 48.8708V19.0427L95.2695 19.0465ZM52.3673 19.0465V0.440382H55.9469V0H42.9062V0.440382H46.4858V48.8708H42.9062V49.3151H63.2371V36.0695H62.7906C62.7906 47.2954 57.9331 48.8708 52.3712 48.8708V19.0427L52.3673 19.0465ZM19.8846 36.0734C19.8846 47.2991 15.027 48.495 9.46498 48.495V24.1527C14.7036 24.1527 15.2194 27.7516 15.2194 33.0475H15.6659V14.6313H15.2194C15.2194 19.931 14.7075 23.716 9.46498 23.716V0.820019C15.027 0.820019 19.4996 1.70078 19.4996 13.1811H19.9461V0H0V0.440382H3.57968V48.8708H0V49.3151H20.331V36.0695H19.8846V36.0734Z" fill="#111111"/>
-                        </g>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_541_1966">
-                        <rect width="150" height="49.3151" fill="white"/>
-                        </clipPath>
-                        </defs>
+                            <g clip-path="url(#clip0_541_1966)">
+                                <mask id="mask0_541_1966" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="150" height="50">
+                                    <path d="M150 0H0V49.3151H150V0Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_541_1966)">
+                                    <path d="M148.591 36.0734C148.591 47.2991 143.734 48.495 138.168 48.495V24.1527C143.41 24.1527 143.922 27.7516 143.922 33.0475H144.373V14.6313H143.922C143.922 19.931 143.41 23.716 138.168 23.716V0.820019C143.73 0.820019 148.207 1.70078 148.207 13.1811H148.653V0H128.707V0.440382H132.286V48.8708H128.707V49.3151H149.038V36.0695H148.591V36.0734ZM95.2695 19.0465V0.440382H98.8492V0H85.8084V0.440382H89.3881V48.8708H85.8084V49.3151H106.139V36.0695H105.693C105.693 47.2954 100.831 48.8708 95.2734 48.8708V19.0427L95.2695 19.0465ZM52.3673 19.0465V0.440382H55.9469V0H42.9062V0.440382H46.4858V48.8708H42.9062V49.3151H63.2371V36.0695H62.7906C62.7906 47.2954 57.9331 48.8708 52.3712 48.8708V19.0427L52.3673 19.0465ZM19.8846 36.0734C19.8846 47.2991 15.027 48.495 9.46498 48.495V24.1527C14.7036 24.1527 15.2194 27.7516 15.2194 33.0475H15.6659V14.6313H15.2194C15.2194 19.931 14.7075 23.716 9.46498 23.716V0.820019C15.027 0.820019 19.4996 1.70078 19.4996 13.1811H19.9461V0H0V0.440382H3.57968V48.8708H0V49.3151H20.331V36.0695H19.8846V36.0734Z" fill="#111111"/>
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_541_1966">
+                                    <rect width="150" height="49.3151" fill="white"/>
+                                </clipPath>
+                            </defs>
                         </svg>
                     </a>
                 </h1>
             </div>
-            <!-- 메뉴 아이콘과 텍스트 로그인,회원가입, 검색 다 담은 상자
-              -->
+            
+            <!-- 2. 하단 네비게이션 바 (메뉴버튼 + GNB 카테고리 + 유틸) -->
             <div class="cont-inner2">
-                <!-- 메뉴 텍스트 -->
+                <!-- 2-1. 좌측 햄버거 메뉴 버튼 (3줄 아이콘) -->
                 <div class="btn-menu-margin">
-                    <!-- 짝대기 세 개 아이콘 -->
                     <button class="btn-menu" type="button" aria-label="메뉴 열기">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path d="M26 4H2V6H26V4Z" fill="#111111"/>
-                                <path d="M26 13H2V15H26V13Z" fill="#111111"/>
-                                <path d="M26 22H2V24H26V22Z" fill="#111111"/>
-                            </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M26 4H2V6H26V4Z" fill="#111111"/>
+                            <path d="M26 13H2V15H26V13Z" fill="#111111"/>
+                            <path d="M26 22H2V24H26V22Z" fill="#111111"/>
+                        </svg>
                     </button>
                 </div>
-                <!-- D:로고(pc서브에서 노출) -->
+                
+                <!-- 2-2. 중앙 메인 카테고리 메뉴 (GNB) -->
                 <div class="D-logo">
-                    <!-- 가운데 메뉴 텍스트 -->
                     <ul class="menu-text1-ul">
                         <li class="menu-text1-item"><a href="#" target="_blank" title="FASHION">FASHION</a></li>
                         <li class="menu-text1-item"><a href="#" target="_blank" title="BEAUTY">BEAUTY</a></li>
@@ -64,40 +70,52 @@
                         <li class="menu-text1-item"><a href="#" target="_blank" title="SHOP">SHOP</a></li>
                     </ul>
                 </div>
-                <!-- 로그인 회원가입 검색 포함 상자 -->
+                
+                <!-- 2-3. 우측 유틸리티 영역 (로그인 / 회원가입 / 검색) -->
                 <div class="header-util-margin">
                     <div class="header-util">
+                        <!-- 로그인 / 회원가입 링크 -->
                         <div class="aside">
                             <a class="headerLogin" href="#" target="_blank" title="LOGIN">LOGIN</a>
                             <a class="headerSigup" href="#" target="_blank" title="SIGNUP">SIGNUP</a>
                         </div>
+                        <!-- 검색 돋보기 아이콘 버튼 -->
                         <div class="btn-search-margin">
-                            <button class="btn-search">
+                            <button class="btn-search" type="button" aria-label="검색">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <mask id="mask0_541_2015" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24">
-                                    <path d="M26 2H2V26H26V2Z" fill="white"/>
-                                </mask>
-                                <g mask="url(#mask0_541_2015)">
-                                    <path d="M12.7101 19.9114L12.7081 19.9117C8.0637 20.5818 3.75706 17.3544 3.08591 12.7087C2.42527 8.06278 5.64603 3.75829 10.2918 3.08804C14.9361 2.41797 19.2428 5.64539 19.9139 10.2912C20.3006 13.009 19.3582 15.6143 17.5708 17.4489C16.3045 18.7429 14.636 19.6377 12.7101 19.9114Z" stroke="#111111" stroke-width="2" stroke-miterlimit="10"/>
-                                    <path d="M18 18L25.0711 25.0711" stroke="#111111" stroke-width="2"/>
-                                </g>
+                                    <mask id="mask0_541_2015" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24">
+                                        <path d="M26 2H2V26H26V2Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_541_2015)">
+                                        <path d="M12.7101 19.9114L12.7081 19.9117C8.0637 20.5818 3.75706 17.3544 3.08591 12.7087C2.42527 8.06278 5.64603 3.75829 10.2918 3.08804C14.9361 2.41797 19.2428 5.64539 19.9139 10.2912C20.3006 13.009 19.3582 15.6143 17.5708 17.4489C16.3045 18.7429 14.636 19.6377 12.7101 19.9114Z" stroke="#111111" stroke-width="2" stroke-miterlimit="10"/>
+                                        <path d="M18 18L25.0711 25.0711" stroke="#111111" stroke-width="2"/>
+                                    </g>
                                 </svg>
                             </button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div><!-- // .cont-inner2 -->
+
+        </div><!-- // .header-wrap -->
     </header>
+
+    <!-- ==========================================================================
+         [MAIN] 메인 콘텐츠 영역
+         ========================================================================== -->
     <main>
+        <!-- ----------------------------------------------------------------------
+             상단 컨테이너 (메인 히어로 비디오 + FASHION 섹션)
+             ---------------------------------------------------------------------- -->
         <div class="container">
-            <!-- 배경 영상을 담는 투명한 상자 -->
+            <!-- [섹션 0] 메인 히어로 배경 비디오 배너 -->
             <div class="itembox">
-                <!-- iframe 태그 짝 맞추기, 주소 물음표(?) 1개로 수정, 불필요한 video 글자 삭제 -->
-                <iframe class="pc" src="https://player.vimeo.com/video/1213164334?autoplay=1&loop=1&title=0&background=1"></iframe>
+                <iframe class="pc" src="https://player.vimeo.com/video/1213164334?autoplay=1&loop=1&title=0&background=1" title="Main Video"></iframe>
             </div>
-            <!-- 하단 패션 기사 영역 -->
+
+            <!-- [섹션 1] FASHION 기사 섹션 -->
             <div class="cate-act-wrap">
+                <!-- 섹션 헤더 (제목 + 더보기) -->
                 <div class="pc-mo">
                     <div class="tit-area">
                         <a href="https://www.elle.co.kr/fashion">
@@ -107,7 +125,9 @@
                     </div>
                 </div>
                 
+                <!-- 기사 목록 (좌측 대형 1개 + 우측 소형 8개) -->
                 <div class="cate-atc-list-pc">
+                    <!-- 좌측 메인 대표 기사 (Sticky 고정) -->
                     <div class="big-thumb">
                         <div class="atcbox">
                             <a href="https://www.elle.co.kr/article/1905832" target="_blank">
@@ -120,8 +140,11 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- 우측 서브 기사 8개 (2열 다단 레이아웃) -->
                     <div class="sm-thumb-type2">
                         <ul class="thum-t2-ul">
+                            <!-- 서브 기사 01 -->
                             <li class="t2 t2-li01">
                                 <div class="ab atbox1">
                                     <a href="https://www.elle.co.kr/article/1905801">
@@ -134,6 +157,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 02 -->
                             <li class="t2 t2-li02">
                                 <div class="ab atbox2">
                                     <a href="https://www.elle.co.kr/article/1905787">
@@ -146,6 +170,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 03 -->
                             <li class="t2 t2-li03">
                                 <div class="ab atbox3">
                                     <a href="https://www.elle.co.kr/article/1905680">
@@ -158,6 +183,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 04 -->
                             <li class="t2 t2-li04">
                                 <div class="ab atbox4">
                                     <a href="https://www.elle.co.kr/article/1905695">
@@ -170,6 +196,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 05 -->
                             <li class="t2 t2-li05">
                                 <div class="ab atbox5">
                                     <a href="https://www.elle.co.kr/article/1905753">
@@ -182,6 +209,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 06 -->
                             <li class="t2 t2-li06">
                                 <div class="ab atbox6">
                                     <a href="https://www.elle.co.kr/article/1905765">
@@ -194,6 +222,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 07 -->
                             <li class="t2 t2-li07">
                                 <div class="ab atbox7">
                                     <a href="https://www.elle.co.kr/article/1905685">
@@ -206,6 +235,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 08 -->
                             <li class="t2 t2-li08">
                                 <div class="ab atbox8">
                                     <a href="https://www.elle.co.kr/article/1905677">
@@ -219,12 +249,17 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    </div><!-- // .sm-thumb-type2 -->
+                </div><!-- // .cate-atc-list-pc -->
+            </div><!-- // .cate-act-wrap (FASHION) -->
+        </div><!-- // .container (상단) -->
+
+        <!-- ----------------------------------------------------------------------
+             [섹션 2] 가로 스크롤 추천 기사 섹션 (전체 너비 배경 영역)
+             ---------------------------------------------------------------------- -->
         <div class="scroll-atc-wrap">
             <div class="scroll-cont-inner">
+                <!-- 섹션 타이틀 및 부제목 -->
                 <div class="container">
                     <div class="scr-tit-wrap">
                         <div class="scr-tit-area">
@@ -233,8 +268,11 @@
                         <p class="hashtag">올가을 활용하기 좋은 패션·뷰티 힌트는 엘르에서.</p>
                     </div>
                 </div>
+
+                <!-- 가로 스크롤 기사 카드 목록 -->
                 <div class="scroll-atc-list">
                     <ul class="sl-ib-ul">
+                        <!-- 가로 스크롤 카드 01 -->
                         <li class="slib-li">
                             <a href="https://www.elle.co.kr/article/1908145" target="_blank">
                                 <div class="slide-imgbox">
@@ -245,6 +283,7 @@
                                 </div>
                             </a>
                         </li>
+                        <!-- 가로 스크롤 카드 02 -->
                         <li class="slib-li">
                             <a href="https://www.elle.co.kr/article/1908119" target="_blank">
                                 <div class="slide-imgbox">
@@ -255,6 +294,7 @@
                                 </div>
                             </a>
                         </li>
+                        <!-- 가로 스크롤 카드 03 -->
                         <li class="slib-li">
                             <a href="https://www.elle.co.kr/article/1908093" target="_blank">
                                 <div class="slide-imgbox">
@@ -265,6 +305,7 @@
                                 </div>
                             </a>
                         </li>
+                        <!-- 가로 스크롤 카드 04 -->
                         <li class="slib-li">
                             <a href="https://www.elle.co.kr/article/1908033" target="_blank">
                                 <div class="slide-imgbox">
@@ -275,6 +316,7 @@
                                 </div>
                             </a>
                         </li>
+                        <!-- 가로 스크롤 카드 05 -->
                         <li class="slib-li">
                             <a href="https://www.elle.co.kr/article/1908080" target="_blank">
                                 <div class="slide-imgbox">
@@ -285,6 +327,7 @@
                                 </div>
                             </a>
                         </li>
+                        <!-- 가로 스크롤 카드 06 -->
                         <li class="slib-li">
                             <a href="https://www.elle.co.kr/article/1908005" target="_blank">
                                 <div class="slide-imgbox">
@@ -296,19 +339,27 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
+                </div><!-- // .scroll-atc-list -->
+            </div><!-- // .scroll-cont-inner -->
+        </div><!-- // .scroll-atc-wrap -->
+
+        <!-- ----------------------------------------------------------------------
+             하단 컨테이너 (TODAY'S PICK, BEAUTY, WEEKLY BEST 섹션)
+             ---------------------------------------------------------------------- -->
         <div class="container">
-            <!-- 하단 패션 기사 영역 -->
+            <!-- [섹션 3] TODAY'S PICK 기사 섹션 -->
             <div class="cate-act-wrap">
+                <!-- 섹션 헤더 -->
                 <div class="pc-mo">
                     <div class="tit-area">
                         <h3 class="tit-margin">TODAY'S PICK</h3>
                     </div>
                 </div>
+                
+                <!-- 4열 기사 카드 목록 -->
                 <div class="issue-atc-list">
                     <ul class="swiper-wrapper">
+                        <!-- 기사 카드 01 -->
                         <li class="swiper-slide">
                             <div class="atcbox">
                                 <div class="imgbox">
@@ -320,6 +371,7 @@
                                 </div>
                             </div>
                         </li>
+                        <!-- 기사 카드 02 -->
                         <li class="swiper-slide">
                             <div class="atcbox">
                                 <div class="imgbox">
@@ -331,6 +383,7 @@
                                 </div>
                             </div>
                         </li>
+                        <!-- 기사 카드 03 -->
                         <li class="swiper-slide">
                             <div class="atcbox">
                                 <div class="imgbox">
@@ -342,6 +395,7 @@
                                 </div>
                             </div>
                         </li>
+                        <!-- 기사 카드 04 -->
                         <li class="swiper-slide">
                             <div class="atcbox">
                                 <div class="imgbox">
@@ -354,18 +408,24 @@
                             </div>
                         </li>
                     </ul>
-                </div>
-            </div>
+                </div><!-- // .issue-atc-list -->
+            </div><!-- // .cate-act-wrap (TODAY'S PICK) -->
+
+            <!-- [섹션 4] BEAUTY 기사 섹션 -->
             <div class="cate-act-wrap">
+                <!-- 섹션 헤더 (제목 + 더보기) -->
                 <div class="pc-mo">
                     <div class="tit-area">
-                        <a href="https://www.elle.co.kr/fashion">
+                        <a href="https://www.elle.co.kr/beauty">
                             <h3 class="tit-margin">BEAUTY</h3>
                             <div class="side-margin">더보기</div>
                         </a>
                     </div>
                 </div>
+                
+                <!-- 기사 목록 (좌측 대형 1개 + 우측 소형 8개) -->
                 <div class="cate-atc-list-pc">
+                    <!-- 좌측 메인 대표 기사 (Sticky 고정) -->
                     <div class="big-thumb">
                         <div class="atcbox">
                             <a href="https://www.elle.co.kr/beauty" target="_blank">
@@ -378,8 +438,11 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- 우측 서브 기사 8개 (2열 다단 레이아웃) -->
                     <div class="sm-thumb-type2">
                         <ul class="thum-t2-ul">
+                            <!-- 서브 기사 01 -->
                             <li class="t2 t2-li01">
                                 <div class="ab atbox1">
                                     <a href="https://www.elle.co.kr/article/1908338">
@@ -392,6 +455,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 02 -->
                             <li class="t2 t2-li02">
                                 <div class="ab atbox2">
                                     <a href="https://www.elle.co.kr/article/1908262">
@@ -404,6 +468,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 03 -->
                             <li class="t2 t2-li03">
                                 <div class="ab atbox3">
                                     <a href="https://www.elle.co.kr/article/1908217">
@@ -416,6 +481,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 04 -->
                             <li class="t2 t2-li04">
                                 <div class="ab atbox4">
                                     <a href="https://www.elle.co.kr/article/1907985">
@@ -428,6 +494,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 05 -->
                             <li class="t2 t2-li05">
                                 <div class="ab atbox5">
                                     <a href="https://www.elle.co.kr/article/1908162">
@@ -440,6 +507,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 06 -->
                             <li class="t2 t2-li06">
                                 <div class="ab atbox6">
                                     <a href="https://www.elle.co.kr/article/1908163">
@@ -452,6 +520,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 07 -->
                             <li class="t2 t2-li07">
                                 <div class="ab atbox7">
                                     <a href="https://www.elle.co.kr/article/1908086">
@@ -464,6 +533,7 @@
                                     </a>
                                 </div>
                             </li>
+                            <!-- 서브 기사 08 -->
                             <li class="t2 t2-li08">
                                 <div class="ab atbox8">
                                     <a href="https://www.elle.co.kr/article/1908022">
@@ -477,18 +547,23 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-                        <div class="cate-act-wrap">
+                    </div><!-- // .sm-thumb-type2 -->
+                </div><!-- // .cate-atc-list-pc -->
+            </div><!-- // .cate-act-wrap (BEAUTY) -->
+
+            <!-- [섹션 5] WEEKLY BEST 섹션 (TOP 3) -->
+            <div class="cate-act-wrap">
+                <!-- 섹션 헤더 -->
                 <div class="pc-mo">
                     <div class="tit-area">
                         <h3 class="tit-margin">WEEKLY BEST</h3>
                     </div>
                 </div>
-                <!-- weekly best 섹션 -->
+                
+                <!-- TOP 3 랭킹 기사 목록 -->
                 <div class="top3-atc-list">
                     <ul class="top3-swiper-wrapper">
+                        <!-- 순위 01 -->
                         <li class="top3-swiper-slide">
                             <div class="atcbox">
                                 <div class="numbox">01</div>
@@ -501,7 +576,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="swiper-slide">
+                        <!-- 순위 02 -->
+                        <li class="top3-swiper-slide">
                             <div class="atcbox">
                                 <div class="numbox">02</div>
                                 <div class="imgbox">
@@ -513,7 +589,8 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="swiper-slide">
+                        <!-- 순위 03 -->
+                        <li class="top3-swiper-slide">
                             <div class="atcbox">
                                 <div class="numbox">03</div>
                                 <div class="imgbox">
@@ -526,10 +603,26 @@
                             </div>
                         </li>
                     </ul>
+                </div><!-- // .top3-atc-list -->
+            </div><!-- // .cate-act-wrap (WEEKLY BEST) -->
+            <div class="cate-act-wrap">
+                <!-- 섹션 헤더 (제목 + 더보기) -->
+                <div class="pc-mo">
+                    <div class="tit-area">
+                        <a href="https://www.elle.co.kr/beauty">
+                            <h3 class="tit-margin">DAILY NEWS</h3>
+                            <div class="side-margin">더보기</div>
+                        </a>
+                    </div>
                 </div>
+                <!-- DAILY NEWS 콘텐츠 -->
             </div>
-        </div>
+        </div><!-- // .container (하단) -->
     </main>
+
+    <!-- ==========================================================================
+         [FOOTER] 푸터 영역 (고객센터 등)
+         ========================================================================== -->
     <footer>
         <div class="container">고객센터</div>
     </footer>
