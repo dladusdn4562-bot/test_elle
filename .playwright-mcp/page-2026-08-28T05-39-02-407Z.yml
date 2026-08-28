@@ -1,0 +1,376 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - heading [level=1] [ref=f2e5]:
+        - link "home" [ref=f2e6] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=f2e11]:
+        - button "메뉴 열기" [ref=f2e13] [cursor=pointer]
+        - list [ref=f2e18]:
+          - listitem [ref=f2e19]:
+            - link "FASHION" [ref=f2e20] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f2e21]:
+            - link "BEAUTY" [ref=f2e22] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f2e23]:
+            - link "STAR" [ref=f2e24] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f2e25]:
+            - link "ELLE DECOR" [ref=f2e26] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f2e27]:
+            - link "SHOP" [ref=f2e28] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f2e30]:
+          - generic [ref=f2e31]:
+            - link "LOGIN" [ref=f2e32] [cursor=pointer]:
+              - /url: "#"
+            - link "SIGNUP" [ref=f2e33] [cursor=pointer]:
+              - /url: "#"
+          - button "검색" [ref=f2e35] [cursor=pointer]
+  - main [ref=f2e40]:
+    - generic [ref=f2e41]:
+      - iframe [ref=f2e43]:
+        
+      - generic [ref=f2e44]:
+        - link "FASHION 더보기 +" [ref=f2e47] [cursor=pointer]:
+          - /url: https://www.elle.co.kr/fashion
+          - heading "FASHION" [level=3] [ref=f2e48]
+          - generic [ref=f2e49]: 더보기 +
+        - generic [ref=f2e50]:
+          - link [ref=f2e53] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1905832
+            - img "title-img" [ref=f2e55]
+            - paragraph [ref=f2e57]: 올여름 찐친과 여행 사진 잘 나오는 비결 알려드려요
+          - list [ref=f2e59]:
+            - listitem [ref=f2e60]:
+              - link [ref=f2e62] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1905801
+                - img "주얼리 이미지" [ref=f2e64]
+                - paragraph [ref=f2e66]: 샤넬을 상징하는 것들이 하이 주얼리가 된다면?
+            - listitem [ref=f2e67]:
+              - link [ref=f2e69] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1905787
+                - img "주얼리 이미지" [ref=f2e71]
+                - paragraph [ref=f2e73]: 로제의 이 티셔츠가 제 여름을 완전히 바꿔놨어요
+            - listitem [ref=f2e74]:
+              - link [ref=f2e76] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1905680
+                - img "주얼리 이미지" [ref=f2e78]
+                - paragraph [ref=f2e80]: 김나영의 장마철 패션 치트키를 공유합니다
+            - listitem [ref=f2e81]:
+              - link [ref=f2e83] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1905695
+                - img "주얼리 이미지" [ref=f2e85]
+                - paragraph [ref=f2e87]: 여름엔 어제 셔츠 입고 내일 셔츠 또 입어도 됩니다
+            - listitem [ref=f2e88]:
+              - link [ref=f2e90] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1905753
+                - img "주얼리 이미지" [ref=f2e92]
+                - paragraph [ref=f2e94]: 올여름 인생 첫 탱크톱을 패션 고수처럼 입는 방법
+            - listitem [ref=f2e95]:
+              - link [ref=f2e97] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1905765
+                - img "주얼리 이미지" [ref=f2e99]
+                - paragraph [ref=f2e101]: 여름에 쪼리 말고 하나 더 신는다면 이 신발이겠죠
+            - listitem [ref=f2e102]:
+              - link [ref=f2e104] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1905685
+                - img "주얼리 이미지" [ref=f2e106]
+                - paragraph [ref=f2e108]: 올여름 옷잘알은 미니 스커트 대신 '이 치마'를 입는다
+            - listitem [ref=f2e109]:
+              - link [ref=f2e111] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1905677
+                - img "주얼리 이미지" [ref=f2e113]
+                - paragraph [ref=f2e115]: 왜 요즘 이 바지를 입는 사람들이 많아졌을까
+    - generic [ref=f2e117]:
+      - generic [ref=f2e119]:
+        - heading "2026 가을 필수템은 이겁니다" [level=2] [ref=f2e121]
+        - paragraph [ref=f2e122]: 올가을 활용하기 좋은 패션·뷰티 힌트는 엘르에서.
+      - list [ref=f2e124]:
+        - listitem [ref=f2e125]:
+          - link [ref=f2e126] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908145
+            - img "장원영이미지" [ref=f2e128]
+            - paragraph [ref=f2e130]: 장원영이 이 셔츠를 꺼냈다면 가을 시작입니다
+        - listitem [ref=f2e131]:
+          - link [ref=f2e132] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908119
+            - img "가디건이미지" [ref=f2e134]
+            - paragraph [ref=f2e136]: 가디건 안 입으면 아직 가을이 아닙니다
+        - listitem [ref=f2e137]:
+          - link [ref=f2e138] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908093
+            - img "목걸이이미지" [ref=f2e140]
+            - paragraph [ref=f2e142]: 요즘 유행하는 목걸이는 쇄골 아래로 길게 내려옵니다
+        - listitem [ref=f2e143]:
+          - link [ref=f2e144] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908033
+            - img "이미지" [ref=f2e146]
+            - paragraph [ref=f2e148]: 여름에 잘 입은 이 컬러, 가을에도 계속 갑니다
+        - listitem [ref=f2e149]:
+          - link [ref=f2e150] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908080
+            - img "자켓이미지" [ref=f2e152]
+            - paragraph [ref=f2e154]: 가을 자켓에 여름 샌들 말이 됩니다
+        - listitem [ref=f2e155]:
+          - link [ref=f2e156] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908005
+            - img "셔츠이미지" [ref=f2e158]
+            - paragraph [ref=f2e160]: 가을옷 입고 싶은데 덥다면 긴팔 셔츠부터 꺼내세요
+    - generic [ref=f2e161]:
+      - generic [ref=f2e162]:
+        - heading "TODAY'S PICK" [level=3] [ref=f2e165]
+        - list [ref=f2e167]:
+          - listitem [ref=f2e168]:
+            - generic [ref=f2e169]:
+              - img "포인트 가방 이미지" [ref=f2e171]
+              - generic [ref=f2e172]:
+                - generic [ref=f2e173]: TRENDS
+                - paragraph [ref=f2e174]: 올가을 가방만 잘 골라도 심플한 룩이 확 달라집니다
+          - listitem [ref=f2e175]:
+            - generic [ref=f2e176]:
+              - img "티셔츠 소매 이미지" [ref=f2e178]
+              - generic [ref=f2e179]:
+                - generic [ref=f2e180]: TRENDS
+                - paragraph [ref=f2e181]: 지금 유행하는 티셔츠는 소매 길이부터 다릅니다
+          - listitem [ref=f2e182]:
+            - generic [ref=f2e183]:
+              - img "여성 이미지" [ref=f2e185]
+              - generic [ref=f2e186]:
+                - generic [ref=f2e187]: WELLNESS
+                - paragraph [ref=f2e188]: 화를 참지도 폭발하지도 않고 건강하게 표현하는 방법
+          - listitem [ref=f2e189]:
+            - generic [ref=f2e190]:
+              - img "니트 이미지" [ref=f2e192]
+              - generic [ref=f2e193]:
+                - generic [ref=f2e194]: TRENDS
+                - paragraph [ref=f2e195]: 올가을 새 니트 살 필요 없습니다, 입는 법만 바꾸세요
+      - generic [ref=f2e196]:
+        - link "BEAUTY 더보기 +" [ref=f2e199] [cursor=pointer]:
+          - /url: https://www.elle.co.kr/beauty
+          - heading "BEAUTY" [level=3] [ref=f2e200]
+          - generic [ref=f2e201]: 더보기 +
+        - generic [ref=f2e202]:
+          - link [ref=f2e205] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/beauty
+            - img "title-img" [ref=f2e207]
+            - paragraph [ref=f2e209]: 입술 위 쿠튀르, 2026 루즈 디올 온 스테이지 컬렉션
+          - list [ref=f2e211]:
+            - listitem [ref=f2e212]:
+              - link [ref=f2e214] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908338
+                - img "아이케어" [ref=f2e216]
+                - paragraph [ref=f2e218]: 아침마다 눈이 붓는다면, 아이케어는 차갑게 시작하세요
+            - listitem [ref=f2e219]:
+              - link [ref=f2e221] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908262
+                - img "장마 습기" [ref=f2e223]
+                - paragraph [ref=f2e225]: 가을장마 습기가 고민이라면 이걸로 잡으세요
+            - listitem [ref=f2e226]:
+              - link [ref=f2e228] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908217
+                - img "이시영 이미지" [ref=f2e230]
+                - paragraph [ref=f2e232]: 이시영이 운동 끝나고 먹는 '다이어트 빵' 레시피
+            - listitem [ref=f2e233]:
+              - link [ref=f2e235] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1907985
+                - img "설윤 이미지" [ref=f2e237]
+                - paragraph [ref=f2e239]: 바이오더마의 새 얼굴, 설윤
+            - listitem [ref=f2e240]:
+              - link [ref=f2e242] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908162
+                - img "루이비통 립 이미지" [ref=f2e244]
+                - paragraph [ref=f2e246]: 루이 비통 뷰티, LV 립 크레용 출시
+            - listitem [ref=f2e247]:
+              - link [ref=f2e249] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908163
+                - img "메리 제인 왓슨 이미지" [ref=f2e251]
+                - paragraph [ref=f2e253]: 화를 참지도 폭발하지도 않고 건강하게 표현하는 방법
+            - listitem [ref=f2e254]:
+              - link [ref=f2e256] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908086
+                - img "외국 여성 이미지" [ref=f2e258]
+                - paragraph [ref=f2e260]: 매일 운동하는데 왜 살이 안 빠질까? 운동 부족은 아닙니다
+            - listitem [ref=f2e261]:
+              - link [ref=f2e263] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908022
+                - img "속눈썹 이미지" [ref=f2e265]
+                - paragraph [ref=f2e267]: 워터프루프 마스카라 매일 쓴다면, 속눈썹 관리도 달라야 합니다
+      - generic [ref=f2e268]:
+        - heading "WEEKLY BEST" [level=3] [ref=f2e271]
+        - list [ref=f2e273]:
+          - listitem [ref=f2e274]:
+            - generic [ref=f2e275]:
+              - generic [ref=f2e276]: "01"
+              - img "치마 이미지" [ref=f2e278]
+              - generic [ref=f2e279]:
+                - generic [ref=f2e280]: FASHION
+                - paragraph [ref=f2e281]: 치마를 간만에 '이렇게' 입었더니 확 세련돼 보인대요
+          - listitem [ref=f2e282]:
+            - generic [ref=f2e283]:
+              - generic [ref=f2e284]: "02"
+              - img "자켓 이미지" [ref=f2e286]
+              - generic [ref=f2e287]:
+                - generic [ref=f2e288]: FASHION
+                - paragraph [ref=f2e289]: 청바지, 자켓, 셔츠만 있으면 가을 스타일링 충분합니다
+          - listitem [ref=f2e290]:
+            - generic [ref=f2e291]:
+              - generic [ref=f2e292]: "03"
+              - img "청바지 이미지" [ref=f2e294]
+              - generic [ref=f2e295]:
+                - generic [ref=f2e296]: WELLNESS
+                - paragraph [ref=f2e297]: 다리 길어 보이는 '이 청바지'로 갈아타세요
+      - generic [ref=f2e298]:
+        - link "DAILY NEWS 더보기 +" [ref=f2e301] [cursor=pointer]:
+          - /url: https://www.elle.co.kr/beauty
+          - heading "DAILY NEWS" [level=3] [ref=f2e302]
+          - generic [ref=f2e303]: 더보기 +
+        - list [ref=f2e305]:
+          - listitem [ref=f2e306]:
+            - generic [ref=f2e307]:
+              - img "신민아 이미지" [ref=f2e308]
+              - paragraph [ref=f2e309]: 생각보다 더 괜찮은 '재혼 황후' 원작 재헌 비주얼
+            - generic [ref=f2e310]:
+              - img "공효진 이미지" [ref=f2e311]
+              - paragraph [ref=f2e312]: 서윤 떠난 공효진의 양평 세컨하우스가 최초로 공개됐다
+          - listitem [ref=f2e313]:
+            - generic [ref=f2e314]:
+              - img "스캔들" [ref=f2e315]
+              - paragraph [ref=f2e316]: 넷플릭스판'스캔들'에서 바뀌는것
+            - generic [ref=f2e317]:
+              - img "아리아나그란데" [ref=f2e318]
+              - paragraph [ref=f2e319]: 자신만의 세계관으로 음악을 전달하는 팝 아티스트 5
+            - generic [ref=f2e320]:
+              - img "장동윤" [ref=f2e321]
+              - paragraph [ref=f2e322]: 장동윤이 감독 데뷔작 주인공과 결혼한다
+            - generic [ref=f2e323]:
+              - img "대환장 기안장" [ref=f2e324]
+              - paragraph [ref=f2e325]: "'대환장 기안장' 시즌2 합류하는 새 멤버와 콘셉트 정보"
+        - generic [ref=f2e326]:
+          - link "STAR 더보기 +" [ref=f2e329] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/star
+            - heading "STAR" [level=3] [ref=f2e330]
+            - generic [ref=f2e331]: 더보기 +
+          - generic [ref=f2e332]:
+            - link [ref=f2e335] [cursor=pointer]:
+              - /url: https://www.elle.co.kr/article/1908213
+              - img "title-img" [ref=f2e337]
+              - paragraph [ref=f2e339]: 카더가든·도운·이채민·타잔이랑 등산할 사람 모여라
+            - list [ref=f2e341]:
+              - listitem [ref=f2e342]:
+                - link [ref=f2e344] [cursor=pointer]:
+                  - /url: https://www.elle.co.kr/article/1908497
+                  - img "튜이드" [ref=f2e346]
+                  - paragraph [ref=f2e348]: 튜이드 같은 텐션 아니면 걸스토크 하기도 싫어요
+              - listitem [ref=f2e349]:
+                - link [ref=f2e351] [cursor=pointer]:
+                  - /url: https://www.elle.co.kr/article/1908336
+                  - img "튜이드" [ref=f2e353]
+                  - paragraph [ref=f2e355]: 하이브 뉴 걸그룹 '튜이드', 9월호 슈퍼 엘르 커버 장식
+              - listitem [ref=f2e356]:
+                - link [ref=f2e358] [cursor=pointer]:
+                  - /url: https://www.elle.co.kr/article/1908383
+                  - img "세븐틴 정한이미지" [ref=f2e360]
+                  - paragraph [ref=f2e362]: 세븐틴 정한의 복귀 첫 인터뷰와 A컷 같은 화보 비하인드
+              - listitem [ref=f2e363]:
+                - link [ref=f2e365] [cursor=pointer]:
+                  - /url: https://www.elle.co.kr/article/1908357
+                  - img "메이드 인 코리아 시즌2" [ref=f2e367]
+                  - paragraph [ref=f2e369]: "'메이드 인 코리아 시즌2' 현빈·정우성·우도환의 압도적 화보"
+    - generic [ref=f2e371]:
+      - generic [ref=f2e373]:
+        - heading "엘르 비디오" [level=2] [ref=f2e375]
+        - paragraph [ref=f2e376]: 엘르와 만난 스타들의 더 많은 이야기.
+      - list [ref=f2e378]:
+        - listitem [ref=f2e379]:
+          - link [ref=f2e380] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908497
+            - img "튜이드" [ref=f2e382]
+            - paragraph [ref=f2e384]: 튜이드 같은 텐션 아니면 걸스토크 하기도 싫어요
+        - listitem [ref=f2e385]:
+          - link [ref=f2e386] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908320
+            - img "정한이미지" [ref=f2e388]
+            - paragraph [ref=f2e390]: 남자의 악마로 돌아온 정한에게 궁금한 것들 다 물었습니다
+        - listitem [ref=f2e391]:
+          - link [ref=f2e392] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908093
+            - img "유부녀킬러 공효진 정준원" [ref=f2e394]
+            - paragraph [ref=f2e396]: "'유부녀 킬러' 공효진과 정준원이 공개하는 비하인드"
+        - listitem [ref=f2e397]:
+          - link [ref=f2e398] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1907709
+            - img "맷데이먼 샤를리즈테론이미지" [ref=f2e400]
+            - paragraph [ref=f2e402]: "'오디세이' 안 보고 오디세요? 맷 데이먼, 샤를리즈 테론의 비하인드"
+        - listitem [ref=f2e403]:
+          - link [ref=f2e404] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1907191
+            - img "이동욱김혜준이미지" [ref=f2e406]
+            - paragraph [ref=f2e408]: 이동욱∙김혜준 '킹왕짱' 케미가 도착했습니다
+        - listitem [ref=f2e409]:
+          - link [ref=f2e410] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1906951
+            - img "민니 이미지" [ref=f2e412]
+            - paragraph [ref=f2e414]: 민니가 제안하는 올여름 패션 필수템은 이것입니다
+    - generic [ref=f2e415]:
+      - generic [ref=f2e416]:
+        - link "STAR 더보기 +" [ref=f2e419] [cursor=pointer]:
+          - /url: https://www.elle.co.kr/star
+          - heading "STAR" [level=3] [ref=f2e420]
+          - generic [ref=f2e421]: 더보기 +
+        - generic [ref=f2e422]:
+          - link [ref=f2e425] [cursor=pointer]:
+            - /url: https://www.elle.co.kr/article/1908213
+            - img "title-img" [ref=f2e427]
+            - paragraph [ref=f2e429]: 카더가든·도운·이채민·타잔이랑 등산할 사람 모여라
+          - list [ref=f2e431]:
+            - listitem [ref=f2e432]:
+              - link [ref=f2e434] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908497
+                - img "튜이드" [ref=f2e436]
+                - paragraph [ref=f2e438]: 튜이드 같은 텐션 아니면 걸스토크 하기도 싫어요
+            - listitem [ref=f2e439]:
+              - link [ref=f2e441] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908336
+                - img "튜이드" [ref=f2e443]
+                - paragraph [ref=f2e445]: 하이브 뉴 걸그룹 '튜이드', 9월호 슈퍼 엘르 커버 장식
+            - listitem [ref=f2e446]:
+              - link [ref=f2e448] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908383
+                - img "세븐틴 정한이미지" [ref=f2e450]
+                - paragraph [ref=f2e452]: 세븐틴 정한의 복귀 첫 인터뷰와 A컷 같은 화보 비하인드
+            - listitem [ref=f2e453]:
+              - link [ref=f2e455] [cursor=pointer]:
+                - /url: https://www.elle.co.kr/article/1908357
+                - img "메이드 인 코리아 시즌2" [ref=f2e457]
+                - paragraph [ref=f2e459]: "'메이드 인 코리아 시즌2' 현빈·정우성·우도환의 압도적 화보"
+      - generic [ref=f2e460]:
+        - link "DAILY NEWS 더보기 +" [ref=f2e463] [cursor=pointer]:
+          - /url: https://www.elle.co.kr/beauty
+          - heading "DAILY NEWS" [level=3] [ref=f2e464]
+          - generic [ref=f2e465]: 더보기 +
+        - list [ref=f2e467]:
+          - listitem [ref=f2e468]:
+            - generic [ref=f2e469]:
+              - img "신민아 이미지" [ref=f2e470]
+              - paragraph [ref=f2e471]: 생각보다 더 괜찮은 '재혼 황후' 원작 재헌 비주얼
+            - generic [ref=f2e472]:
+              - img "공효진 이미지" [ref=f2e473]
+              - paragraph [ref=f2e474]: 서윤 떠난 공효진의 양평 세컨하우스가 최초로 공개됐다
+          - listitem [ref=f2e475]:
+            - generic [ref=f2e476]:
+              - img "스캔들" [ref=f2e477]
+              - paragraph [ref=f2e478]: 넷플릭스판'스캔들'에서 바뀌는것
+            - generic [ref=f2e479]:
+              - img "아리아나그란데" [ref=f2e480]
+              - paragraph [ref=f2e481]: 자신만의 세계관으로 음악을 전달하는 팝 아티스트 5
+            - generic [ref=f2e482]:
+              - img "장동윤" [ref=f2e483]
+              - paragraph [ref=f2e484]: 장동윤이 감독 데뷔작 주인공과 결혼한다
+            - generic [ref=f2e485]:
+              - img "대환장 기안장" [ref=f2e486]
+              - paragraph [ref=f2e487]: "'대환장 기안장' 시즌2 합류하는 새 멤버와 콘셉트 정보"
+  - contentinfo [ref=f2e488]:
+    - generic [ref=f2e489]: 고객센터

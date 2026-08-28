@@ -412,6 +412,7 @@ header {
     display: flex;
     position: relative;
     box-sizing: content-box;
+    margin: 0 -12px;
 }
 
 /* 4개 균등 분할 카드 (각 25%) */
@@ -462,12 +463,12 @@ header {
 
 .top3-swiper-wrapper {
     display: flex;
+    gap: 24px;
 }
 
 /* 3개 균등 분할 카드 (각 33.3%) */
 .top3-atc-list li {
-    width: 33%;
-    padding: 0 12px;
+    width: calc((100% - 48px) / 3);
     flex-shrink: 0;
     position: relative;
 }
