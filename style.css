@@ -558,6 +558,28 @@ header {
     font-weight: 500;
     line-height: 26px;
 }
+/* most populer 섹션 */
+.tit-area-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.tit-area-1 h3 {
+    font-size: 48px;
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    margin-bottom: 8px;
+}
+.mp-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px 24px;
+    font-size: 16px;
+    line-height: 13px;
+    font-weight: 500;
+    color: #b4b4b4;
+}
+
 /* ==========================================================================
       object-fit: cover; 9. 푸터 영역 (Footer)
    ========================================================================== */
