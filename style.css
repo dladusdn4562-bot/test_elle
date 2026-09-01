@@ -572,7 +572,9 @@ header {
 }
 
 /* MOST POPULAR */
-.swiper2-slide-top img {margin-bottom: 16px;}
+.swiper2-wrapper img {
+    margin-bottom: 16px;
+}
 
 
 
