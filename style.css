@@ -437,7 +437,7 @@ header {
 }
 
 /* 카테고리 태그 (빨간색) */
-.issue-atc-list .cate {
+.cate {
     display: block;
     font-size: 11px;
     font-weight: 500;
@@ -490,15 +490,6 @@ header {
 /* 순위 카드 텍스트 */
 .top3-atc-list .txtbox {
     margin-top: 16px;
-}
-
-/* 카테고리 태그 (빨간색) */
-.top3-atc-list .cate {
-    display: block;
-    font-size: 11px;
-    font-weight: 500;
-    color: #CC0000;
-    margin-bottom: 8px;
 }
 
 /* 기사 제목 */
@@ -579,6 +570,11 @@ header {
     font-weight: 500;
     color: #b4b4b4;
 }
+
+/* MOST POPULAR */
+.swiper2-slide-top img {margin-bottom: 16px;}
+
+
 
 /* ==========================================================================
       object-fit: cover; 9. 푸터 영역 (Footer)
